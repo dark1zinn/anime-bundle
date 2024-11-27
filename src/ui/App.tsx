@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
@@ -7,23 +6,9 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <img src="https://animesonlinecc.to/wp-content/uploads/2019/09/7sjz43r1dkBpvecDMiiRVNYVllb-185x278.jpg" alt="nanas" /> <br></br>
+      <iframe src="https://www.blogger.com/video.g?token=AD6v5dw44p3goh9op2UQsMBJDVWt_UZcSL1vb4SSptFfstylHzU1T5-uO53mUFTzK8l4lymoxN0e1XEAprSEiLkhmRmCfHhHmho7CUNb5-fCEJiKEY17zChZhTSb0xSnZasGe01QTqKS" frameBorder={0} allowFullScreen></iframe>
+
     </>
   )
 }
