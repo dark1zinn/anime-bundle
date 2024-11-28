@@ -1,0 +1,15 @@
+.anime-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 185px;
+  max-height: 315px;
+}
+.anime-card h4 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.anime-card a img {
+  width: 100%;
+  height: 98%;
+}

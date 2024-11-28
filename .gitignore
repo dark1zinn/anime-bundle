@@ -14,6 +14,9 @@ dist-react
 dist-electron
 *.local
 
+# other utility files
+*.scss
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
