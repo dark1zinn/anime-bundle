@@ -18,7 +18,7 @@
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean": "rmdir dist && rmdir dist-electron && rmdir dist-react",
+    "clean": "rmdir dist-electron && rmdir dist-react && rmdir dist",
     "transpile:electron": "tsc --project src/electron/tsconfig.json",
     "dist:mac": "npm run transpile:electron && npm run build && electron-builder --mac --arm64",
     "dist:win": "npm run transpile:electron && npm run build && electron-builder --win --x64",

@@ -1,4 +1,6 @@
 
-export function linkTo(link: string): void {
-    window.electron.openExternal(link)
+export async function linkTo(link: string) {
+    //@ts-ignore
+    await window.electron.openExternal(link)
+    //window.electron.static()
 }

@@ -15,7 +15,7 @@ dist-electron
 *.local
 
 # other utility files
-*.scss
+
 
 # Editor directories and files
 .vscode/*

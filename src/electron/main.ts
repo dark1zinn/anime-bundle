@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import path from 'path'
 import { isDev } from './util.js';
 import { getPreloadPath } from './pathResolver.js';
@@ -21,4 +21,8 @@ app.on("ready", () => {
     } else {
         mainWindow.loadFile(path.join(app.getAppPath(), '/dist-react/index.html'))
     }
+
+    ipcMain.on('openExternal', (_, link) => {
+        shell.openExternal(link)
+    })
 })
