@@ -12,7 +12,14 @@
   justify-content: space-evenly;
 }
 #mediaprofile-page .info img {
+  width: 260px;
   border-radius: 5px;
+  aspect-ratio: 2/3.5;
+  transition: 400ms;
+}
+#mediaprofile-page .info img:hover {
+  box-shadow: rgba(176, 170, 170, 0.849) 0px 0px 15px;
+  transform: scale(1.1);
 }
 #mediaprofile-page .info .about {
   width: 70%;

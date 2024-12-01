@@ -35,3 +35,15 @@
   transform: translateY(-24px);
   font-size: medium;
 }
+.anime-card .loading-card {
+  width: 230px;
+  height: 432px;
+}
+.anime-card .loading-card .loading-card-title {
+  background-color: hsla(180, 100%, 97%, 0.46);
+  filter: blur(3px);
+}
+.anime-card .loading-card .loading-card-image {
+  background-color: hsla(180, 100%, 97%, 0.712);
+  filter: blur(5px);
+}

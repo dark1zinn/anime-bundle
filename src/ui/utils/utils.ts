@@ -4,9 +4,7 @@ export async function linkTo(link: string) {
     await window.electron.openExternal(link)
 }
 
-export async function fetchAnimes(): Promise<{}[]> {
+export async function fetchAnimes(): Promise<{ title: string, image: string, link: string, quality: string, audio: string, episodes: string }[]> {
     //@ts-ignore
-    const data = await window.electron.getAnimes()
-    console.log(data)
-    return data
+    return await window.electron.getAnimes()
 }

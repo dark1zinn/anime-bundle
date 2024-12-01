@@ -14,6 +14,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    // errorElement: <ErrorPage />,   // disabled due interfering on initial app load when packaged
     children: [
       {
         path: "/",

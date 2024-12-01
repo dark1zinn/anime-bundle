@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom"
+import { Suspense } from "react"
 import './AnimeCard.css'
 
-const AnimeCard = ({ title, image }: {title: string, image: string}) => {
-    //const page: string = '/animes/' + title.toLowerCase().replace(' ', '-')
-    //console.log(page)
+const AnimeCard = ({payload}: any) => {
+    //const slug: string = '/animes/' + title.toLowerCase().replace(' ', '-')
     return (
         <div className="anime-card">
-            <Link title={title} to=''>
-                <h4>{title}</h4>
-                <img src={image} loading='lazy' />
-            </Link>
+            <Suspense fallback={
+                <div className="loading-card">
+                <h4 className="loading-card-title"></h4>
+                <div className="loading-card-image"></div>
+            </div>}>
+                    <Link title={payload.title} to='nanas'>
+                        <h4>{payload.title}</h4>
+                        <img src={payload.image} loading='lazy' />
+                    </Link>
+            </Suspense>
         </div>
     )
 }
