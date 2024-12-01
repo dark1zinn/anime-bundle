@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
 import './AnimeCard.css'
 
-const AnimeCard = () => {
+const AnimeCard = ({ title, image }: {title: string, image: string}) => {
+    //const page: string = '/animes/' + title.toLowerCase().replace(' ', '-')
+    //console.log(page)
     return (
         <div className="anime-card">
-            <h4>Nanatsu No Taizai</h4>
-            <Link to="/animes/nanatsu-no-taizai">
-                <img src="https://animesonlinecc.to/wp-content/uploads/2019/09/7sjz43r1dkBpvecDMiiRVNYVllb-185x278.jpg" alt='nanas' />
+            <Link title={title} to=''>
+                <h4>{title}</h4>
+                <img src={image} loading='lazy' />
             </Link>
         </div>
     )

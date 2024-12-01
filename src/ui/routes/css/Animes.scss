@@ -1,6 +1,16 @@
 #page-animes {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-    margin-top: 50px;
+    display: block;
+    //justify-content: space-evenly;
+    //gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    min-height: 50px;
+    padding-inline: 40px;
+    
+    #results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
 }

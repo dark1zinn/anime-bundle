@@ -14,4 +14,6 @@ header div a h2 {
 }
 header div p span {
   font-size: smaller;
+  padding-right: 8px;
+  text-decoration: underline;
 }

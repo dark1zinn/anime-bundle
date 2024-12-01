@@ -1,4 +1,5 @@
 nav {
-  display: block;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }

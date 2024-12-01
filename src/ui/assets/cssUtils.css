@@ -2,7 +2,3 @@
   color: rgb(141, 230, 230);
   text-decoration: underline;
 }
-.span-anchor:hover {
-  color: rgb(60, 160, 160);
-  cursor: pointer;
-}

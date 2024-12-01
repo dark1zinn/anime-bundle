@@ -14,7 +14,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -31,8 +30,12 @@ const router = createBrowserRouter([
       {
         path: 'animes/:name',
         element: <MediaProfile />
-      }
+      },
     ],
+  },
+  {
+    path: '/error',
+    element: <ErrorPage />
   },
 ]);
 

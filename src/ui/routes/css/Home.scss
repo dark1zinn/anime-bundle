@@ -1,4 +1,9 @@
 #page-home {
     display: flex;
+    flex-direction: column;
     padding-inline: 30px;
+
+    h2 {
+        margin-bottom: 0px;
+    }
 }

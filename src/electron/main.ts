@@ -2,6 +2,7 @@ import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import path from 'path'
 import { isDev } from './util.js';
 import { getPreloadPath } from './pathResolver.js';
+import fetchData from './fetchData.js';
 
 type test = string;
 
@@ -25,4 +26,6 @@ app.on("ready", () => {
     ipcMain.on('openExternal', (_, link) => {
         shell.openExternal(link)
     })
+
+    ipcMain.handle('getAnimes', fetchData)
 })
