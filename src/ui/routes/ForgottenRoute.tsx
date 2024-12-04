@@ -1,8 +1,18 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import SpinerAnimedSpiningGear from "../assets/spiners-animedSvg/spiner-SpiningGear"
 import './css/ForgottenRoute.css'
+import { useEffect } from "react";
 
 const ForgottenRoute = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        setTimeout(() => {
+            navigate('/')
+            console.log('navigated')
+        }, 4500);
+    }, [])
+
     return (
         <div id="page-forgotten">
             <SpinerAnimedSpiningGear />
@@ -11,5 +21,5 @@ const ForgottenRoute = () => {
         </div>
     )
 }
-
+ 
 export default ForgottenRoute
