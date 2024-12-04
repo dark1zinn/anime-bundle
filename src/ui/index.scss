@@ -1,0 +1,77 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: 400ms;
+}
+
+html {
+    height: 99%;
+
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    
+        div#root {
+            position: absolute;
+            width: 100%;
+            height: inherit;
+        }
+    }
+}
+
+
+
+// css utils 👇
+.span-anchor {
+    color: rgb(141, 230, 230);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: none;
+}
+
+.span-anchor:hover {
+    color: rgb(49, 170, 170);
+    text-decoration: underline;
+}
+
+svg.icon-externalLink {
+    display: inline-block;
+    width: 14px;
+    aspect-ratio: 1/1;
+
+    path {
+        fill: white;
+    }
+}
+
+svg.icon-defaultProfile {
+    display: inline-block;
+    width: 40px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+
+    path {
+        fill: rgb(185, 183, 183);
+    }
+}
+svg.icon-defaultProfile:hover path {
+    fill: rgb(255, 255, 255);
+}

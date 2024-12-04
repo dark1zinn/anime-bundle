@@ -10,11 +10,3 @@
   flex-direction: row;
   align-items: center;
 }
-#page-about span svg.icon-externalLink {
-  display: inline-block;
-  width: 14px;
-  aspect-ratio: 1/1;
-}
-#page-about span svg.icon-externalLink path {
-  fill: white;
-}

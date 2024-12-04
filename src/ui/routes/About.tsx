@@ -1,7 +1,6 @@
 import { linkTo } from '../utils/utils'
 import './css/About.css'
-import '../assets/css/cssUtils.css'
-import IconExternalLink from '../assets/icons-svg/icon-externalLink.tsx'
+import IconExternalLink from '../assets/icons-svg/icon-ExternalLink'
 
 const About = () => {
     return (
