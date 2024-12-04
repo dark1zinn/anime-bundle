@@ -6,7 +6,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Home from './routes/Home.tsx'
 import About from './routes/About.tsx'
 import ErrorPage from './routes/ErrorPage.tsx'
-import Animes from './routes/Animes.tsx'
+import SearchPage from './routes/SearchPage.tsx'
 import MediaProfile from './routes/MediaProfile.tsx'
 import App from './App.tsx'
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'animes',
-        element: <Animes />
+        element: <SearchPage />
       },
       {
         path: 'animes/:name',

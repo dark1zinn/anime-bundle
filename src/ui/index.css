@@ -11,12 +11,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+html {
+  height: 99%;
 }
 
 body {
   margin: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+div#root {
+  position: absolute;
+  width: 100%;
+  height: inherit;
 }
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import './css/ErrorPage.css'
-import '../assets/cssUtils.css'
+import '../assets/css/cssUtils.css'
 
 
 const ErrorPage = () => {

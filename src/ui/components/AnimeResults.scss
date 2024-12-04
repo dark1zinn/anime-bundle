@@ -1,6 +1,11 @@
 #results {
     display: flex;
+    padding-block: 40px;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 20px;
+    height: fit-content;
+    // overflow-y: scroll;
+
+    transition: 400ms;
 }

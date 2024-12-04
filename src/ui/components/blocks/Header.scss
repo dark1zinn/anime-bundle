@@ -1,0 +1,31 @@
+header {
+    // position: fixed;
+    display: flex;
+    gap: 6%;
+    height: 8%;
+    width: 100%;
+    padding-inline: 24px;
+    align-items: center;
+    z-index: 5;
+    border-bottom: solid 6px rgba(131, 88, 217, 0.299);
+    box-shadow: rgba(255, 255, 255, 0.119) 0px 5px 10px;
+    transition: 400ms;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            h2 {
+                display: flex;
+                margin: 0px;
+            }
+            transition: 400ms;
+        }
+        a:hover {
+            transform: scale(1.08) translateX(8px);
+            text-shadow: rgba(115, 67, 211, 0.743) 0px 3px 8px;
+        }
+    }
+}

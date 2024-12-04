@@ -3,11 +3,9 @@ import './css/Home.css'
 const Home = () => {
     return (
         <div id="page-home">
-            <h2>Homepage</h2>
+            <h2>Bem-vindo(a)</h2>
             <div>
-                <p>
-                Oi %user.username%, pronto para novos episodios?
-                </p>
+                <p>Pronto(a) para novos episodios?</p>
             </div>
         </div>
     )

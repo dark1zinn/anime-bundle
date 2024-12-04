@@ -2,3 +2,11 @@ a {
   color: azure;
   text-decoration: none;
 }
+
+.home-view {
+  position: absolute;
+  display: flex;
+  height: 92%;
+  width: 100%;
+  overflow: hidden;
+}

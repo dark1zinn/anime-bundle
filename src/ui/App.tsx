@@ -1,14 +1,16 @@
-import './App.css'
-
-// reusing structures
 import { Outlet } from 'react-router-dom'
-import Header from './components/Header'
+import Header from './components/blocks/Header'
+import SideBar from './components/blocks/SideBar'
+import './App.css'
 
 function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className='home-view'>
+        <SideBar />
+        <Outlet />
+      </div>
     </>
   )
 }

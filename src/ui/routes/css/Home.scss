@@ -1,7 +1,9 @@
 #page-home {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    padding-inline: 30px;
+    padding-inline: 20px;
+    padding-block: 13px;
+    width: 90%;
 
     h2 {
         margin-bottom: 0px;
