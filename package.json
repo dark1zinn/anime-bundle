@@ -7,7 +7,7 @@
     "email": "edilsonjuininho154@gmail.com"
   },
   "publisher": "dark1zinn",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "version": "0.0.0-dev",
   "type": "module",
   "main": "dist-electron/main.js",
