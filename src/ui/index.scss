@@ -52,6 +52,9 @@ html {
     text-decoration: underline;
 }
 
+
+// svg classes 👇
+// static svg's 👇
 svg.icon-externalLink {
     display: inline-block;
     width: 14px;
@@ -74,4 +77,54 @@ svg.icon-defaultProfile {
 }
 svg.icon-defaultProfile:hover path {
     fill: rgb(255, 255, 255);
+}
+
+
+// animed svg's 👇
+svg.spiner-animed-twoSpiningGears {
+    display: inline-block;
+    width: 300px;
+    aspect-ratio: 1/1;
+
+    path +*, path +* +* {
+        stroke: rgb(200, 200, 200);
+        transition: all;
+    }
+}
+
+svg.spiner-animed-spiningGear {
+    display: inline-block;
+    width: 200px;
+    aspect-ratio: 1/1;
+
+    path {
+        fill: white;
+        stroke: white;
+        stroke-width: 6px;
+        transition: all;
+    }
+}
+
+svg.spiner-animed-threeDotsFade {
+    display: inline-block;
+    width: 200px;
+    aspect-ratio: 1/1;
+
+    circle {
+        fill: white;
+        stroke: white;
+        transition: all;
+    }
+}
+
+svg.spiner-animed-threeDotsJump {
+    display: inline-block;
+    width: 200px;
+    aspect-ratio: 1/1;
+
+    circle {
+        fill: white;
+        stroke: white;
+        transition: all;
+    }
 }

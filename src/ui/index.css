@@ -66,3 +66,47 @@ svg.icon-defaultProfile path {
 svg.icon-defaultProfile:hover path {
   fill: rgb(255, 255, 255);
 }
+
+svg.spiner-animed-twoSpiningGears {
+  display: inline-block;
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+svg.spiner-animed-twoSpiningGears path + *, svg.spiner-animed-twoSpiningGears path + * + * {
+  stroke: rgb(200, 200, 200);
+  transition: all;
+}
+
+svg.spiner-animed-spiningGear {
+  display: inline-block;
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+svg.spiner-animed-spiningGear path {
+  fill: white;
+  stroke: white;
+  stroke-width: 6px;
+  transition: all;
+}
+
+svg.spiner-animed-threeDotsFade {
+  display: inline-block;
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+svg.spiner-animed-threeDotsFade circle {
+  fill: white;
+  stroke: white;
+  transition: all;
+}
+
+svg.spiner-animed-threeDotsJump {
+  display: inline-block;
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+svg.spiner-animed-threeDotsJump circle {
+  fill: white;
+  stroke: white;
+  transition: all;
+}

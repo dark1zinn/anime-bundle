@@ -9,6 +9,7 @@ import ErrorPage from './routes/ErrorPage.tsx'
 import SearchPage from './routes/SearchPage.tsx'
 import MediaProfile from './routes/MediaProfile.tsx'
 import App from './App.tsx'
+import ForggottenRoute from './routes/ForgottenRoute.tsx'
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <App />
+    element: <ForggottenRoute />
   }
 ]);
 
