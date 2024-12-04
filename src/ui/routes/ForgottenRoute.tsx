@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import SpinerAnimedSpiningGear from "../assets/spiners-animedSvg/spiner-SpiningGear"
 import './css/ForgottenRoute.css'
 
-const ForggottenRoute = () => {
+const ForgottenRoute = () => {
     return (
         <div id="page-forgotten">
             <SpinerAnimedSpiningGear />
@@ -12,4 +12,4 @@ const ForggottenRoute = () => {
     )
 }
 
-export default ForggottenRoute
+export default ForgottenRoute
