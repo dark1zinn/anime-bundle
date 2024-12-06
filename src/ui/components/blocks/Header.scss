@@ -6,6 +6,7 @@ header {
     width: 100%;
     padding-inline: 24px;
     align-items: center;
+    justify-content: space-between;
     z-index: 5;
     border-bottom: solid 6px rgba(131, 88, 217, 0.299);
     box-shadow: rgba(255, 255, 255, 0.119) 0px 5px 10px;
@@ -26,6 +27,15 @@ header {
         a:hover {
             transform: scale(1.08) translateX(8px);
             text-shadow: rgba(115, 67, 211, 0.743) 0px 3px 8px;
+        }
+    }
+
+    button {
+        height: fit-content;
+        aspect-ratio: 1/1;
+
+        svg.icon-defaultProfile {
+            cursor: pointer;
         }
     }
 }

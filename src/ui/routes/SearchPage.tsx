@@ -2,46 +2,45 @@ import { useEffect, useState } from 'react';
 import AnimeResults from '../components/AnimeResults';
 import { fetchAnimes } from '../utils/utils';
 import './css/SearchPage.css';
+import Loading from '../components/blocks/Loading';
 
 interface Anime {
-  title: string;
-  image: string;
-  link: string;
-  quality: string;
-  audio: string;
-  episodes: string;
+    title: string;
+    image: string;
+    link: string;
+    quality: string;
+    audio: string;
+    episodes: string;
 }
 
 const SearchPage = () => {
-  const [animes, setAnimes] = useState<Anime[] | null>(null);
+    const [animes, setAnimes] = useState<Anime[] | null>(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const promise = new Promise<Anime[]>((resolve) => {
-        setTimeout(async () => {
-          const animes = await fetchAnimes();
-          resolve(animes);
-        }, 1000);
-      });
+    useEffect(() => {
+        const fetchData = async () => {
+            const promise = new Promise<Anime[]>((resolve) => {
+                setTimeout(async () => {
+                    const animes = await fetchAnimes();
+                    resolve(animes);
+                }, 2500);
+            });
 
-      const data = await promise;
-      setAnimes(data);
-    };
+            const data = await promise;
+            setAnimes(data);
+        };
 
-    fetchData();
-  }, []);
+        fetchData();
+    }, []);
 
-  return (
-    <div id="page-animes">
-      {!animes ? (
-        <div className="page-animes-loading">
-          <h2>Carregando...</h2>
+    return (
+        <div id="page-search">
+            {!animes ? (
+                <Loading />
+            ) : (
+                <AnimeResults resultsData={animes} />
+            )}
         </div>
-      ) : (
-        <AnimeResults resultsData={animes} />
-      )}
-    </div>
-  );
+    );
 };
 
 export default SearchPage;

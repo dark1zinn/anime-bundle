@@ -9,7 +9,6 @@ const ForgottenRoute = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate('/')
-            console.log('navigated')
         }, 4500);
     }, [])
 

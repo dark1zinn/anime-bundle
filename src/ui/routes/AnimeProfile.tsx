@@ -1,7 +1,7 @@
 import AOPlayer from "../components/AOPlayer"
-import './css/MediaProfile.css'
+import './css/AnimeProfile.css'
 
-const MediaProfile = () => {
+const AnimeProfile = () => {
     return (
         <div id="mediaprofile-page">
             <div className="info">
@@ -23,4 +23,4 @@ const MediaProfile = () => {
     )
 }
 
-export default MediaProfile
+export default AnimeProfile

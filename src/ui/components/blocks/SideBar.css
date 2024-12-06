@@ -3,16 +3,13 @@
   flex-direction: column;
   height: 100%;
   min-width: 16%;
+  max-width: 210px;
   padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 16px;
   text-align: center;
   transition: 400ms;
   border-right: solid rgba(131, 88, 217, 0.299);
-}
-.side-bar h4 {
-  -webkit-text-decoration: dashed;
-          text-decoration: dashed;
 }
 .side-bar .side-bar-contents {
   display: flex;
@@ -42,6 +39,9 @@
   box-shadow: hsla(0, 5%, 73%, 0.687) 0px 2px 15px;
   background-color: rgba(157, 157, 157, 0.208);
   transform: scale(1.03);
+}
+.side-bar .side-bar-contents .side-bar-navigation a.active {
+  background-color: rgba(157, 157, 157, 0.208);
 }
 .side-bar .side-bar-contents i {
   text-decoration: underline;

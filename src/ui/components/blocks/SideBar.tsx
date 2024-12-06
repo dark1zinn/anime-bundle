@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './SideBar.css'
 
 const SideBar = () => {
@@ -7,10 +7,10 @@ const SideBar = () => {
             <h4>Navigation</h4>
             <div className="side-bar-contents">
                 <div className="side-bar-navigation">
-                    <Link to='/'><span>Home</span></Link>
-                    <Link to='animes'><span>Animes</span></Link>
-                    <Link to='about'><span>About</span></Link>
-                    <Link to='/error'><span>Error</span></Link>
+                    <NavLink to='/'><span>Home</span></NavLink>
+                    <NavLink to='search'><span>Animes</span></NavLink>
+                    <NavLink to='about'><span>About</span></NavLink>
+                    <NavLink to='/error'><span>Error</span></NavLink>
                 </div>
 
 

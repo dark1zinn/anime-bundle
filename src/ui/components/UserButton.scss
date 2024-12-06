@@ -1,0 +1,40 @@
+.user-button {
+    position: relative;
+    display: inline-block;
+    
+    summary {
+        width: 40px;
+        height: 40px;
+    }
+    summary::marker {
+        content: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        right: 26px;
+        z-index: 2;
+        padding: 10px;
+        position: fixed;
+        list-style: none;
+        border-radius: 10px;
+        border: solid rgba(114, 110, 110, 0.42);
+        background-color: rgb(63, 62, 62);
+
+        li {
+            display: block;
+            text-align: center;
+            padding-inline: 6px;
+            background-color: rgba(77, 75, 75, 0.728);
+            border: solid 2px rgba(90, 88, 88, 0.892);
+            border-radius: 5px;
+        }
+        li:hover {
+            background-color: rgb(108, 105, 105);
+            transform: scale(1.06);
+            box-shadow: rgb(110, 109, 109) 0px 0px 10px;
+        }
+    }
+}

@@ -1,16 +1,8 @@
-#page-animes {
+#page-search {
   display: flex;
   height: 100%;
   width: 100%;
   padding-inline: 10px;
   transition: 400ms;
   overflow-y: scroll;
-}
-#page-animes .page-animes-loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  text-align: center;
 }
