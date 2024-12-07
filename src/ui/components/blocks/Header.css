@@ -27,11 +27,3 @@ header div a:hover {
   transform: scale(1.08) translateX(8px);
   text-shadow: rgba(115, 67, 211, 0.743) 0px 3px 8px;
 }
-header button {
-  height: -moz-fit-content;
-  height: fit-content;
-  aspect-ratio: 1/1;
-}
-header button svg.icon-defaultProfile {
-  cursor: pointer;
-}

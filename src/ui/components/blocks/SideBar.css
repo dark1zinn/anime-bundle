@@ -22,17 +22,19 @@
 .side-bar .side-bar-contents .side-bar-navigation {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
   transition: 400ms;
-  height: 22%;
 }
 .side-bar .side-bar-contents .side-bar-navigation a {
-  display: block;
+  display: flex;
   width: 90%;
+  padding-block: 0px;
   border: solid hsla(0, 2%, 62%, 0.286);
   background-color: rgba(128, 128, 128, 0.089);
   border-radius: 5px;
+  justify-content: center;
+  gap: 8px;
   transition: 400ms;
 }
 .side-bar .side-bar-contents .side-bar-navigation a:hover {

@@ -2,13 +2,19 @@
   display: inline-block;
   height: -moz-fit-content;
   height: fit-content;
-  width: 40%;
+  width: 50%;
 }
 #search-bar input {
   height: inherit;
-  width: 84%;
+  width: 100%;
   padding: 8px;
   font-size: medium;
+}
+#search-bar input::-moz-placeholder {
+  text-align: center;
+}
+#search-bar input::placeholder {
+  text-align: center;
 }
 #search-bar button {
   background-color: rgba(192, 27, 192, 0.662);

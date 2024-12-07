@@ -29,13 +29,4 @@ header {
             text-shadow: rgba(115, 67, 211, 0.743) 0px 3px 8px;
         }
     }
-
-    button {
-        height: fit-content;
-        aspect-ratio: 1/1;
-
-        svg.icon-defaultProfile {
-            cursor: pointer;
-        }
-    }
 }

@@ -19,6 +19,7 @@
     margin: 0px;
     box-sizing: border-box;
     transition: 400ms;
+    user-select: none;
 }
 
 html {
@@ -77,6 +78,16 @@ svg.icon-defaultProfile {
 }
 svg.icon-defaultProfile:hover path {
     fill: rgb(255, 255, 255);
+}
+
+svg.icon-home {
+    display: inline-block;
+    width: 18px;
+    aspect-ratio: 1/1;
+
+    path {
+        fill: white;
+    }
 }
 
 

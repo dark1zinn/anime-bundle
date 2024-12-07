@@ -3,6 +3,7 @@ import AnimeResults from '../components/AnimeResults';
 import { fetchAnimes } from '../utils/utils';
 import './css/SearchPage.css';
 import Loading from '../components/blocks/Loading';
+import { useSearchParams } from 'react-router-dom';
 
 interface Anime {
     title: string;
@@ -15,11 +16,13 @@ interface Anime {
 
 const SearchPage = () => {
     const [animes, setAnimes] = useState<Anime[] | null>(null);
+    const [searchParams] = useSearchParams()
 
     useEffect(() => {
         const fetchData = async () => {
             const promise = new Promise<Anime[]>((resolve) => {
                 setTimeout(async () => {
+                    console.log(searchParams.get('name'))
                     const animes = await fetchAnimes();
                     resolve(animes);
                 }, 2500);

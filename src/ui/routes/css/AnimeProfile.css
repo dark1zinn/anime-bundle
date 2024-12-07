@@ -19,7 +19,7 @@
 #mediaprofile-page .info img {
   width: 280px;
   border-radius: 5px;
-  aspect-ratio: 2/3.5;
+  aspect-ratio: 2/3.3;
   transition: 400ms;
 }
 #mediaprofile-page .info img:hover {

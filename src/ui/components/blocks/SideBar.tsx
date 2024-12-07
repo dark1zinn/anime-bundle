@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import './SideBar.css'
+import IconHome from "../../assets/icons-svg/icon-Home";
 
 const SideBar = () => {
     return (
@@ -7,7 +8,7 @@ const SideBar = () => {
             <h4>Navigation</h4>
             <div className="side-bar-contents">
                 <div className="side-bar-navigation">
-                    <NavLink to='/'><span>Home</span></NavLink>
+                    <NavLink to='/'><IconHome /><span>Home</span></NavLink>
                     <NavLink to='search'><span>Animes</span></NavLink>
                     <NavLink to='about'><span>About</span></NavLink>
                     <NavLink to='/error'><span>Error</span></NavLink>

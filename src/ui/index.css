@@ -16,6 +16,9 @@
   margin: 0px;
   box-sizing: border-box;
   transition: 400ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 html {
@@ -65,6 +68,15 @@ svg.icon-defaultProfile path {
 
 svg.icon-defaultProfile:hover path {
   fill: rgb(255, 255, 255);
+}
+
+svg.icon-home {
+  display: inline-block;
+  width: 18px;
+  aspect-ratio: 1/1;
+}
+svg.icon-home path {
+  fill: white;
 }
 
 svg.spiner-animed-twoSpiningGears {

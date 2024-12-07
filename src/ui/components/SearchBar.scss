@@ -1,14 +1,18 @@
 #search-bar {
     display: inline-block;
     height: fit-content;
-    width: 40%;
+    width: 50%;
 
     input {
         height: inherit;
-        width: 84%;
+        width: 100%;
         padding: 8px;
         font-size: medium;
     }
+    input::placeholder {
+        text-align: center;
+    }
+
     button {
         background-color: rgba(192, 27, 192, 0.662);
         border: none;
