@@ -11,27 +11,40 @@
 }
 .user-button ul {
   display: flex;
+  margin-top: 14px;
   flex-direction: column;
   gap: 8px;
-  right: 26px;
+  right: -3px;
   z-index: 2;
   padding: 10px;
   position: fixed;
   list-style: none;
-  border-radius: 10px;
-  border: solid rgba(114, 110, 110, 0.42);
+  border-radius: 5px;
+  border-left: solid rgba(114, 110, 110, 0.42);
   background-color: rgb(63, 62, 62);
 }
 .user-button ul li {
   display: block;
-  text-align: center;
+  min-width: 230px;
   padding-inline: 6px;
-  background-color: rgba(77, 75, 75, 0.728);
-  border: solid 2px rgba(90, 88, 88, 0.892);
   border-radius: 5px;
 }
 .user-button ul li:hover {
   background-color: rgb(108, 105, 105);
   transform: scale(1.06);
   box-shadow: rgb(110, 109, 109) 0px 0px 10px;
+}
+.user-button ul hr {
+  border-top: 1px solid rgb(62, 61, 61);
+}
+
+@keyframes fade-in-slide-left {
+  from {
+    left: 40px;
+    opacity: 0;
+  }
+  to {
+    right: 26px;
+    opacity: 1;
+  }
 }

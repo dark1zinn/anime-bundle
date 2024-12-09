@@ -9,17 +9,18 @@ const UserButton = () => {
                 <IconDefaultProfile />
             </summary>
             <ul>
-                <Link to=''>
+                <Link to='/profile'>
                     <li>Perfil</li>
                 </Link>
-                <Link to=''>
+                <Link to='/profile/settings'>
                     <li>Configurações</li>
                 </Link>
-                <Link to=''>
-                    <li>SlepNaTchecaPerereca</li>
+                <Link to='profile/stats'>
+                    <li>Status</li>
                 </Link>
+                <hr />
                 <Link to=''>
-                    <li>jshhdecbvjb\sjdbsdbkdvbsjjck</li>
+                    <li>jshhdecbvjb\sjdbsdbkdv</li>
                 </Link>
             </ul>
         </details>
