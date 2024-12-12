@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import AnimeResults from '../components/AnimeResults';
-import { fetchAnimes } from '../utils/utils';
+import { getAnimes } from '../utils/utils';
 import './css/SearchPage.css';
 import Loading from '../components/Loading';
 import { useSearchParams } from 'react-router-dom';
@@ -26,8 +26,7 @@ const SearchPage = () => {
         const fetchData = async () => {
             const promise = new Promise<Anime[]>((resolve) => {
                 setTimeout(async () => {
-                    // console.log(search)
-                    const animes = await fetchAnimes();
+                    const animes = await getAnimes(search);
                     resolve(animes);
                 }, 2500);
             });

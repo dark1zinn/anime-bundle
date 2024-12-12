@@ -1,0 +1,42 @@
+.anime-info {
+  display: flex;
+  width: 100%;
+  gap: 3%;
+  padding-inline: 20px;
+  padding-bottom: 50px;
+}
+.anime-info img {
+  width: 340px;
+  height: 500px;
+  border-radius: 5px;
+}
+.anime-info img:hover {
+  box-shadow: rgba(176, 170, 170, 0.719) 0px 0px 15px;
+  transform: scale(1.07);
+}
+.anime-info .about {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.anime-info .about h3 {
+  font-size: xx-large;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.anime-info .about .description {
+  width: 96%;
+  margin-left: 20px;
+  margin-block: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.anime-info .about .other {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 40px;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import MainSlider from '../MainSlider'
 import './MainContents.css'
-import { fetchAnimes } from '../../utils/utils'
+import { getAnimes } from '../../utils/utils'
 import Loading from '../Loading';
 
 interface Anime {
@@ -23,8 +23,7 @@ const MainContents = () => {
         const fetchData = async () => {
             const promise = new Promise<Anime[]>((resolve) => {
                 setTimeout(async () => {
-                    // console.log(search)
-                    const animes = await fetchAnimes();
+                    const animes = await getAnimes('lepo');  //for test purposes, must change it later
                     resolve(animes);
                 }, 2500);
             });

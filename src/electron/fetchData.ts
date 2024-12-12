@@ -1,16 +1,12 @@
 import { animes } from "./data.js"
+import { singleAnime } from "./data2.js"
 
-async function fetchData() {
-    //const data = await fetch(`data.json`)
-    //    .then(response => response.json())
-    //    .then(data => {
-    //        return data; 
-    //    })
-    //    .catch(error => {
-    //        console.error('Error to load JSON:', error);
-    //    });
-    
+export async function getAnimesResults(searchString: string) {
+    console.log(searchString)  //for test purposes
     return animes
 }
 
-export default fetchData
+export async function getSingleAnime(link: string) {
+    console.log(link)   //for test purposes
+    return singleAnime
+}

@@ -10,57 +10,5 @@
     padding-inline: 1%;
     gap: 90px;
 
-    .info {
-        display: flex;
-        width: 100%;
-        gap: 3%;
-        padding-inline: 20px;
-
-        img {
-            height: 98%;
-            border-radius: 5px;
-            aspect-ratio: 2.1/3.1;
-        }
-
-        img:hover {
-            box-shadow: rgba(176, 170, 170, 0.719) 0px 0px 15px;
-            transform: scale(1.07);
-        }
-
-        .about {
-            display: flex;
-            flex-direction: column;
-            width: 64%;
-            height: fit-content;
-
-            h3 {
-                font-size: xx-large;
-                width: fit-content;
-                margin-bottom: 10px;
-            }
-            
-            .description {
-                width: 96%;
-                margin-left: 20px;
-                margin-block: 0px;
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .other {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                margin-top: 40px;
-            }
-        }
-    }
-
-    .media-player {
-        display: flex;
-        width: 90%;
-        aspect-ratio: 16/9;
-        padding: 2%;
-        justify-content: center;
-    }
+    
 }
