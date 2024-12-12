@@ -17,7 +17,7 @@ const AnimeProfile = () => {
         const fetchData = async () => {
             const promise = new Promise<any>((resolve) => {
                 setTimeout(async () => {
-                    const anime = await getSingleAnime('lepo');
+                    const anime = await getSingleAnime(location.state.link);
                     resolve(anime);
                 }, 2500);
             });

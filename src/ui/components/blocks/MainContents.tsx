@@ -23,7 +23,7 @@ const MainContents = () => {
         const fetchData = async () => {
             const promise = new Promise<Anime[]>((resolve) => {
                 setTimeout(async () => {
-                    const animes = await getAnimes('lepo');  //for test purposes, must change it later
+                    const animes = await getAnimes('naruto');  //for test purposes, must change it later
                     resolve(animes);
                 }, 2500);
             });

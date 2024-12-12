@@ -7,7 +7,7 @@ const Home = () => {
     let greetings = 'bem-vindo'
     
     useEffect(() => {                           // temporary use, should be moved to App.tsx later, and be provided via a context,
-        const getUser = { name: 'dark1zinn' }
+        const getUser = { name: 'usuario' }
         if (getUser) {
             setUser(getUser)
         } else {

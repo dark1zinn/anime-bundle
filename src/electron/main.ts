@@ -2,9 +2,9 @@ import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import path from 'path'
 import { isDev } from './util.js';
 import { getPreloadPath } from './pathResolver.js';
-import { getAnimesResults, getSingleAnime }from './fetchData.js';
+import Puppet from './puppet.js';
 
-type test = string;
+const fetcher = new Puppet
 
 app.on("ready", () => {
     const mainWindow = new BrowserWindow({
@@ -27,11 +27,9 @@ app.on("ready", () => {
         shell.openExternal(link)
     })
     ipcMain.handle('getSearchAnimes', async (_, searchString) => {
-        console.log('atSearch')
-        return await getAnimesResults(searchString)
+        return await fetcher.searchBA(searchString)
     })
     ipcMain.handle('getSingleAnime', async (_, link) => {
-        console.log('atSingle')
-        return await getSingleAnime(link)
+        return await fetcher.getSingleBA(link)
     })
 })
