@@ -13,15 +13,13 @@
     .info {
         display: flex;
         width: 100%;
-        gap: 2%;
-        padding-inline: 4%;
-        // justify-content: space-between;
+        gap: 3%;
+        padding-inline: 20px;
 
         img {
-            width: 280px;
+            height: 98%;
             border-radius: 5px;
-            aspect-ratio: 2/3.3;
-            transition: 400ms;
+            aspect-ratio: 2.1/3.1;
         }
 
         img:hover {
@@ -32,7 +30,7 @@
         .about {
             display: flex;
             flex-direction: column;
-            width: 600px;
+            width: 64%;
             height: fit-content;
 
             h3 {
@@ -40,12 +38,13 @@
                 width: fit-content;
                 margin-bottom: 10px;
             }
-
-            p {
-                // display: block;
-                width: 100%;
+            
+            .description {
+                width: 96%;
                 margin-left: 20px;
                 margin-block: 0px;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             .other {
