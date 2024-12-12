@@ -1,11 +1,22 @@
 #page-home {
     display: inline-flex;
+    overflow-y: scroll;
     flex-direction: column;
-    padding-inline: 20px;
-    padding-block: 13px;
+    padding-inline: 16px;
+    padding-top: 13px;
     width: 90%;
+    overflow-y: scroll;
 
     h2 {
         margin-bottom: 0px;
+
+        span {
+            text-decoration: none;
+        }
+        span:hover {
+            text-shadow: rgba(149, 50, 171, 0.877) 0px 0px 35px;
+            text-decoration: underline;
+            // transform: rotateY(360deg);
+        }
     }
 }

@@ -1,10 +1,19 @@
 #page-home {
   display: inline-flex;
+  overflow-y: scroll;
   flex-direction: column;
-  padding-inline: 20px;
-  padding-block: 13px;
+  padding-inline: 16px;
+  padding-top: 13px;
   width: 90%;
+  overflow-y: scroll;
 }
 #page-home h2 {
   margin-bottom: 0px;
+}
+#page-home h2 span {
+  text-decoration: none;
+}
+#page-home h2 span:hover {
+  text-shadow: rgba(149, 50, 171, 0.877) 0px 0px 35px;
+  text-decoration: underline;
 }

@@ -1,4 +1,5 @@
-import SpinerAnimedSpiningGear from "../../assets/spiners-animedSvg/spiner-SpiningGear"
+
+import SpinerAnimedSpiningGear from '../assets/spiners-animedSvg/spiner-SpiningGear'
 import './Loading.css'
 
 const Loading = () => {

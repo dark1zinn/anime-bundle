@@ -9,9 +9,8 @@ const SideBar = () => {
             <div className="side-bar-contents">
                 <div className="side-bar-navigation">
                     <NavLink to='/'><IconHome /><span>Home</span></NavLink>
-                    <NavLink to='search'><span>Animes</span></NavLink>
                     <NavLink to='about'><span>About</span></NavLink>
-                    <NavLink to='/error'><span>Error</span></NavLink>
+                    <NavLink to='/dev'><span>Dev tests</span></NavLink>
                 </div>
 
 

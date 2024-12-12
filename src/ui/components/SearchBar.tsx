@@ -21,9 +21,14 @@ const SearchBar = () => {
 
     }, [search])
 
+
+    // TO-DO: fix this 'error'
     return (
         <div id='search-bar'>
-            <input type="search" name='searchBar' placeholder='Pesquise animes 🔍' onKeyDown={(e) => { if (e.key === "Enter") { setSearch(e.target.value) } }} />   // TO-DO: fix this 'error' 
+            <input type="search" name='searchBar' placeholder='Pesquise animes 🔍' onKeyDown={
+                // @ts-ignore
+                (e) => { if (e.key === "Enter") { setSearch(e.target.value) } }
+            } />
         </div>
     )
 }

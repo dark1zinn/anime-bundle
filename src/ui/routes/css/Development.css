@@ -1,0 +1,17 @@
+#page-development {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#page-development .dev-options {
+  display: flex;
+  width: 58%;
+  flex-direction: column;
+}
+#page-development .dev-options i {
+  text-decoration: underline;
+  color: yellow;
+  cursor: help;
+}

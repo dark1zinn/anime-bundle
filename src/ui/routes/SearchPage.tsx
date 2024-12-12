@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import AnimeResults from '../components/AnimeResults';
 import { fetchAnimes } from '../utils/utils';
 import './css/SearchPage.css';
-import Loading from '../components/blocks/Loading';
+import Loading from '../components/Loading';
 import { useSearchParams } from 'react-router-dom';
 import { SearchContext } from '../App';
 
@@ -19,7 +19,7 @@ const SearchPage = () => {
     const [animes, setAnimes] = useState<Anime[] | null>(null);
     const [searchParams] = useSearchParams()
 
-    const {search, setSearch} = useContext(SearchContext)
+    const { search, setSearch } = useContext(SearchContext)
 
     useEffect(() => {
         setAnimes(null)

@@ -1,0 +1,15 @@
+.main-contents {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  gap: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main-contents .slider-animes {
+  height: 480px;
+}
+.main-contents .slider-animes h3 {
+  margin-bottom: 10px;
+}

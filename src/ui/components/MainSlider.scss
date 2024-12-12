@@ -1,0 +1,21 @@
+.main-slider {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    min-height: 200px;
+    height: 90%;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-inline: 18px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgb(134, 21, 199) rgba(0, 0, 0, 0);
+
+    .anime-card {
+        height: 92%;
+        aspect-ratio: 2/3.2;
+    }
+}

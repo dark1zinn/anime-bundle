@@ -7,7 +7,7 @@ import './App.css'
 export const SearchContext = createContext<any>(null)
 
 function App() {
-  const [search, setSearch] = useState<string | null>(null);
+  const [search, setSearch] = useState<string | undefined>(undefined);
 
   return (
     <>

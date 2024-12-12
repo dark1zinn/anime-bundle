@@ -10,6 +10,10 @@ import SearchPage from './routes/SearchPage.tsx'
 import AnimeProfile from './routes/AnimeProfile.tsx'
 import App from './App.tsx'
 import ForgottenRoute from './routes/ForgottenRoute.tsx'
+import Development from './routes/Development.tsx'
+import Profile from './routes/Profile.tsx'
+import Settings from './routes/Settings.tsx'
+import Stats from './routes/Stats.tsx'
 
 const router = createBrowserRouter([
   {
@@ -36,8 +40,26 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: '/profile',
+    element: <Profile />,
+    children: [
+      {
+        path: 'settings',
+        element: <Settings />
+      },
+      {
+        path: 'stats',
+        element: <Stats />
+      }
+    ]
+  },
+  {
     path: '/error',
     element: <ErrorPage />
+  },
+  {
+    path: '/dev',
+    element: <Development />
   },
   {
     path: '*',
